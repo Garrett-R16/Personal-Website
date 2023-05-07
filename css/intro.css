@@ -1,13 +1,10 @@
+
+
 .intro-background-image {
   display: flex;
 
-  height: 800px;
-  opacity: .5;
- 
+  height: 100vh;
   max-width: 100%;
-  overflow: hidden;
-
-  
 }
 
 
@@ -19,10 +16,6 @@
 
   object-fit: cover;
   object-position: center;
-  
+  overflow: hidden;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
