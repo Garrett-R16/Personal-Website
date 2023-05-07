@@ -1,0 +1,35 @@
+.header {
+  height: 70px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+}
+
+.logo {
+  margin-left: 20px;
+  font-family: Lora;
+  font-size: 50px;
+
+}
+
+.letter-1 {
+  position: absolute;
+  color: white;
+  z-index: 10000;
+}
+
+.letter-2 {
+  position: absolute;
+  color: #a8a8a8;
+  left: 10px;
+  z-index: 1;
+}
+
+body {
+  background-color: #353535;
+}
