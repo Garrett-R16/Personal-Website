@@ -1,0 +1,54 @@
+#second-section {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.planet-container {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.planet-container img {
+  position: absolute;
+  height: 500px;
+  top: -60px;
+}
+
+.planet-container::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  right: -40px;
+  bottom: 0;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.change-text p,
+.The p {
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.change-text {
+  text-align: center;
+  padding-top: 130px;
+}
+
+.change-text p span,
+.The p span {
+  color: #11D800;
+}
+
+.The p {
+  padding-top: 50px;
+  font-size: 125px;
+}

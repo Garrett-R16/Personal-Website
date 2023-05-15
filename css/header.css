@@ -1,65 +1,91 @@
 #header {
-  height: 70px;
-
-  display: relative;
-  flex-direction: row;
-
-  position: fixed;
-
-  top: 0;
-  left: 0;
-  right: 0;
-
-  background-color: rgb(0, 0, 0, .3);
-  border-bottom: 1px solid rgb(255, 255, 255);
-
-  z-index: 1000;
+  height: 100vh;
+  width: 100%;
 }
 
-.logo-section {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 48px;
+.background-image {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  top: 0px;
+  object-fit: cover;
+}
+
+.background-gradient {
+  position: absolute;
+  object-fit: cover;
+  bottom: 0px;
+  height: 40vh;
+  width: 100%;
+}
+
+.header-container {
+  padding: 10px 10%;;
+  z-index: 1000;
+
 }
 
 .logo {
-  width: 48px;
-  margin-left: 30px;
+  height: 50px;
   border-radius: 10px;
 }
 
-.right-section {
-  position: absolute;
-  width: 450px;
-  right: 100px;
+nav {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: space-between;
-  top: 24.5px;
-
+  flex-wrap: wrap;
 }
 
-header nav div p {
-  font-family: Lato;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
   color: white;
-  font-size: 17px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 18px;
+  position: relative;
 }
 
-header div p:hover {
-  cursor: pointer;
-} 
-
-header div p:after {
+nav ul li a::after {
   content: '';
   position: absolute;
 
-  width: 100%;
+  width: 0;
   height: 2px;
-  background-color: (107, 235, 90);
-  bottom: -6px;
-  left: 0px
+  left: 0;
+  bottom: -4px;
+
+  background: #11D800;
+  transition: 0.35s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.intro-text {
+  text-align: center;
+  margin-top: 28vh;
+  color: white;
+}
+
+.intro-text p {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.intro-text h1 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.intro-text h1 span {
+  color: #11D800;
 }
