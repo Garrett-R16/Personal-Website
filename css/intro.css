@@ -3,7 +3,10 @@
   width: 100%;
   background-color: black;
   color: white;
+  position: relative;
 }
+
+/*Planet*/
 
 .planet-container {
   position: relative;
@@ -23,12 +26,14 @@
   content: "";
   position: absolute;
   top: -90px;
-  left: -40px;
-  right: -40px;
-  bottom: 0;
-  border: 5px solid white;
+  left: -30px;
+  right: -30px;
+  bottom: 30px;
+  border: 5px solid rgb(255, 255, 255, .7);
   border-radius: 50%;
 }
+
+/*Text*/
 
 .change-text p,
 .The p {
@@ -36,6 +41,7 @@
   font-weight: 600;
   margin: 0;
   text-align: center;
+  
 }
 
 .change-text {
@@ -45,10 +51,58 @@
 
 .change-text p span,
 .The p span {
-  color: #11D800;
+  color: #29cc72;
 }
+
 
 .The p {
   padding-top: 50px;
   font-size: 125px;
+  
+}
+
+/*Gradient for text behind planet*/
+
+.span-1 {
+  background-image: linear-gradient(to top, #ffffff3a, #ffffff);
+  background-clip: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.span-2 {
+  background-image: linear-gradient(to top, #29cc722f, #29cc72);
+  background-clip: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Side Thingy*/
+
+.side-text {
+  color: white;
+  position: absolute;
+  left: 5px;
+  bottom: 60px;
+  font-size: 20px;
+  rotate: -90deg;
+}
+.side-text::before,
+.side-text::after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  vertical-align: middle;
+  width: 150%;
+  top: 50%;
+}
+
+.side-text::before {
+  left: 60px
+}
+
+.side-text::after {
+  right: 60px
 }
