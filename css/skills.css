@@ -1,0 +1,56 @@
+#skills-section {
+  height: 40vh;
+  width: 100%;
+  background-color: black;
+}
+
+.container {
+  padding-top: 220px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-p {
+  font-size: 80px;
+}
+
+.title {
+  top: -140px;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+}
+
+.title-p::after {
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  height: 6px;
+  left: 0;
+  bottom: -10px;
+
+  background: white;
+}
+
+.skills {
+  display: flex;
+  position: relative;
+
+  margin-top: 40px;
+}
+
+.skills-p {
+  font-size: 47px;
+}
+
+.title-p,
+.skills-p {
+  color: white;
+  font-weight: 600;
+}
+

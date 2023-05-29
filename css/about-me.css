@@ -1,5 +1,5 @@
 #about-me-section {
-  height: 100vh;
+  height: 81vh;
   width: 100%;
   position: relative;
 }
@@ -84,7 +84,7 @@
 .about-head {
   font-size: 100px;
   font-weight: 700;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 
