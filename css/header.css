@@ -4,12 +4,32 @@
 }
 
 .background-image {
-  position: absolute;
+  display: flex;
+  position: relative;
   height: 100vh;
   width: 100%;
-  z-index: -1;
-  top: 0px;
   object-fit: cover;
+  z-index: -1;
+}
+
+.background-image img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -75px;
+  object-fit: cover;
+
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  z-index: 1;
 }
 
 .background-gradient {
@@ -72,6 +92,9 @@ nav ul li a:hover::after {
   text-align: center;
   margin-top: 28vh;
   color: white;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro-text p {

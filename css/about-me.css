@@ -1,5 +1,5 @@
 #about-me-section {
-  height: 81vh;
+  height: 864px;
   width: 100%;
   position: relative;
 }
@@ -130,6 +130,7 @@
   vertical-align: middle;
   width: 80px;
   top: 50%;
+ 
 }
 
 .side-text-2::before {
