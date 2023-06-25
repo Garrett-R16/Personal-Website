@@ -1,119 +1,48 @@
-#skills-section {
-  height: 800px;
+#projects-title {
   width: 100%;
-  background-color: black;
-  padding-top: 50px;
+  height: 400px;
+  position: relative;
 }
 
-.container {
+.title-image {
+  display: flex;
+
   position: relative;
-  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.title-image img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title-image::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  z-index: 1;
+}
+
+.title-text {
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
-}
-
-.container-grid {
-  padding-top: 220px;
-  width: 100%;
-
   position: relative;
-  display: grid;
-  grid-template-columns: 350px 350px 350px;
-  column-gap: 60px;
-
-  color: white;
 }
 
-
-.title-p {
-  font-weight: 600;
-  font-size: 80px;
-  color: white;
-  position: relative;
-  
-}
-
-.title {
-  top: 40px;
+.title-text p {
   position: absolute;
-  display: inline-block;
-
-  right: 0;
-}
-
-.title-p::after {
-  content: '';
-  position: absolute;
-
-  width: 140%;
-  height: 6px;
-  right: 0;
-  bottom: -10px;
-
-  background: white;
-}
-
-.skills-box {
-  position: relative;
-  padding: 20px 20px;
-
-  background-color: #1a1a1a;
-  text-align: center;
-}
-
-.skills-title {
-  display: inline-block;
-  padding-bottom: 40px;
-}
-
-.skills-title p {
-  font-weight: 600;
-  font-size: 30px;
   color: white;
-  position: relative;
-}
+  font-size: 60px;
+  top: 0;
 
-.skills-title p::after,
-.skills-title p::before {
-  content: '';
-  position: absolute;
-
-  width: 120%;
-  height: 4px;
-  bottom: -10px;
-
-  background: white;
-}
-
-.skills-title p::after {
-  right: 0;
-}
-
-.skills-title p::before {
-  left: 0;
-}
-
-.skills-icons {
-  display: grid;
-  display: flex;
-  justify-content: center;
-  grid-auto-columns: auto;
-  column-gap: 10px;
-
-  align-items: center;
-  margin-top: 30px;
-}
-
-.skills-info p {
-  font-size: 20px;
-}
-
-.skills-icons img {
-  display: flex;
-  height: 45px;
-}
-
-#solid {
-  height: 80px;
+  padding-top: 100px;
 }

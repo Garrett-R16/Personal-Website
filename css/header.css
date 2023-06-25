@@ -1,6 +1,7 @@
 #header {
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .background-image {
@@ -16,7 +17,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  top: -75px;
   object-fit: cover;
 
 }
@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
   z-index: 1;
 }
@@ -41,7 +41,9 @@
 }
 
 .header-container {
-  padding: 10px 10%;;
+  position: absolute;
+  width: 100%;
+  
   z-index: 1000;
 
 }
@@ -67,7 +69,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
 }
 
@@ -90,7 +92,7 @@ nav ul li a:hover::after {
 
 .intro-text {
   text-align: center;
-  margin-top: 28vh;
+  margin-top: 35vh;
   color: white;
   z-index: 1000;
   margin-left: auto;
