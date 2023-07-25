@@ -65,10 +65,10 @@
 .about-picture::before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: -20px;
-  right: 20px;
-  bottom: 20px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   border: 5px solid black;
   z-index: -3;
 }
@@ -76,6 +76,7 @@
 
 .about-picture img:hover {
   filter: grayscale(0%);
+  transform: translate(-20px, -20px);
 }
 
 .about-information {
@@ -108,36 +109,4 @@
   left: 0;
 
   background: black;
-}
-
-
-.side-text-2 {
-  color: black;
-  position: absolute;
-  left: 9px;
-  top: 109px;
-  font-size: 20px;
-  rotate: -90deg;
-  font-weight: 600;
-}
-
-.side-text-2::before,
-.side-text-2::after {
-  background-color: black;
-  content: "";
-  display: inline-block;
-  height: 3px;
-  position: absolute;
-  vertical-align: middle;
-  width: 80px;
-  top: 50%;
- 
-}
-
-.side-text-2::before {
-  left: 60px
-}
-
-.side-text-2::after {
-  right: 60px
 }

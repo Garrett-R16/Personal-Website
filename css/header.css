@@ -2,7 +2,9 @@
   height: 100vh;
   width: 100%;
   position: relative;
+  padding-bottom: 500px;
 }
+
 
 .background-image {
   display: flex;
@@ -14,66 +16,51 @@
 }
 
 .background-image img{
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
 
-.background-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
-  z-index: 1;
-}
 
-.background-gradient {
-  position: absolute;
-  object-fit: cover;
-  bottom: 0px;
-  height: 40vh;
-  width: 100%;
-}
+/* Top bar */
 
 .header-container {
-  position: absolute;
-  width: 100%;
-  
-  z-index: 1000;
-
-}
-
-.logo {
   height: 50px;
-  border-radius: 10px;
-}
-
-nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+
+  z-index: 1000;
+  flex-wrap: nowrap;
 }
 
-nav ul li {
+.logo {
+  height: 35px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.header-container nav {
+  margin-right: 24px;
+}
+
+.header-container nav ul li {
   display: inline-block;
   list-style: none;
   margin: 0px 30px;
 }
 
-nav ul li a {
+.header-container nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 15px;
   position: relative;
 }
 
-nav ul li a::after {
+.header-container nav ul li a::after {
   content: '';
   position: absolute;
 
@@ -82,12 +69,182 @@ nav ul li a::after {
   left: 0;
   bottom: -4px;
 
-  background: #11D800;
+  background: #E59500;
   transition: 0.35s;
 }
 
-nav ul li a:hover::after {
+.header-container nav ul li a:hover::after {
   width: 100%;
+}
+
+/* Middle Text */
+
+.intro-text {
+  text-align: left;
+  max-width: 600px;
+  padding: 35vh 40px 0 40px;
+
+  color: white;
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) { 
+  nav {
+    display: none;
+  }
+}
+
+.intro-info,
+.intro-info h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.intro-info span {
+  color: #002642;
+}
+
+.intro-info h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro-info h1::after {
+  content: '';
+  position: absolute;
+
+  width: 50%;
+  height: 4px;
+  left: 40px;
+  bottom: -4px;
+
+  background: #002642;
+}
+
+.intro-about {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/*Hamburger Menu*/
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 35px;
+  cursor: pointer;
+  margin-right: 40px;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  margin: 6px 0px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+
+
+.hamburger.is-active:after {
+  transform: translate(0px, -11px) rotate(45deg) ;
+}
+
+.hamburger.is-active:before {
+  transform: translate(0px, 11px) rotate(-45deg) ;
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 98;
+  background-color: #002642;
+  padding-top: 100px;
+  left: 100%;
+  transition: 0.5s;
+}
+
+.mobile-nav.is-active {
+  left: 0%;
+}
+
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+
+
+.mobile-nav a {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 20px 16px;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  text-decoration: none;
+  color: #E59500;
+  background-color: #00355a;
+}
+
+.mobile-nav a::after {
+  content: '';
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0px;
+
+  background: #E59500;
+  transition: 0.35s;
+}
+
+.mobile-nav a:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 800px) { 
+  .hamburger {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/*
+  ::-webkit-scrollbar {
+  display: none;
 }
 
 .intro-text {
@@ -101,16 +258,16 @@ nav ul li a:hover::after {
 
 .intro-text p {
   font-size: 45px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
 .intro-text h1 {
   font-size: 120px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 0;
 }
 
-.intro-text h1 span {
-  color: #29cc72;
-}
+.intro-text span {
+  color: #002642;
+}*/

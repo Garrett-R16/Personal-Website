@@ -5,23 +5,22 @@
 
     <!--Style Sheets-->
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/planet-section.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/about-me.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/projects.css">
+    
+    <script src="javascript/hamburger.js"></script>
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
   </head>
 
   <body>
     <header id="header">
       <div class="header-container">
+        <img class="logo" src="images/logo.png">
         <nav>
-          <img class="logo" src="images/logo.png">
           <ul>
             <li><a href="url">Home</a></li>
             <li><a href="url">About Me</a></li>
@@ -29,131 +28,36 @@
             <li><a href="url">Contact Me</a></li>
           </ul>
         </nav>
+        <!--Credit to Tyler Potts for Hamburger Menu-->
+        <button class="hamburger">
+          <div class="bar">
+
+          </div>
+        </button>
       </div>
       <div class="background-image">
         <div class="intro-text">
-          <p>Hello, I am</p>
-          <h1>Garrett Russell<span id="period">.</span></h1>
+          <div class="intro-info">
+            <p>Hello<span>,</span> I<span>'</span>m</p>
+            <h1>Garrett Russell<span>.</span></h1>
+          </div> 
+            <div class="intro-about">
+              <p>
+                An engineer who can’t help but wonder at the stars
+              </p>
+            </div>
         </div>
-        <img src="images/space-background.jpg">
+        <img src="images/orange-space.jpg">
       </div>
     </header>
 
-    <section id="second-section">
-      <div class="bottom">
-        <div class="intro">
-          <p>
-            I am a highly inspired, highly motivated <b>engineer</b> and student 
-            based in Massachusetts with a heavy interest in 
-            <b>space exploration</b>.
-          </p>
-        </div>
-        <div class="planet-container">
-          <img src="images/moon-picture.png">
-        </div>
-      </div>
-      <div class="side-text">
-        <p>
-          24-7
-        </p>
-      </div>
-    </section>
-
-    <section id="about-me-section">
-      <div class="about-me">
-        <div class="about-title">
-          <p>
-            Who am I?
-          </p>
-        </div>
-        <div class="about-picture">
-          <img src="pfp/profile-picture.jpg">
-        </div>
-        <div class="about-information">
-          <p class="about-head">
-            Engineer
-          </p>
-          <p class="about-text">
-            Ever since I was young, space has always been a source of 
-            both inspiration and fascination. This, coupled with a 
-            passion for creation lead me to pursue a career in engineering.
-
-            Within the realm of engineering, I see myself in being
-            mechanical or electrical. I plan to use these skills to 
-            create a positive impact and contribute towards space
-            exploration, or even simply improve quality of life 
-            through engineering solutions.
-            
-            Outside of my career interests, I enjoy playing tennis, 
-            watching soccer, and spending time with my family.
-          </p>
-        </div>
-      </div>
-      <div class="side-text-2">
-        <p>
-          365
-        </p>
-      </div>
-    </section>
-
-    <section id="projects-title">
-      <div class="title-text">
-        <p>
-          <b>Engineering to create a</b> Brighter Future
-        </p>
-      </div>
-      <div class="title-image">
-        <img src="images/space-2-image.jpg">
-      </div>
-    </section>
-
-    <section id="projects-section">
-      <div class="project">
-        <img src="images/projects/bionic-arm.jpg">
-        <container class="project-information">
-          <p class="title">
-            RDE - Assistive Device
-          </p>
-          <p class="info">
-            Aided in the research and creation of an assistive
-            device that would offer a more affordable alternative 
-            to current options. 
-          </p>
-          <grid class="skills-container">
-            <button>
-              R&D
-            </button>
-            <button>
-              CAD
-            </button>
-            <button>
-              PCB Design
-            </button>
-            <button>
-              PCB Construction
-            </button>
-        </container>
-      </div>
-      <div class="project">
-        <img src="images/projects/epoxy-table.png">
-        <container class="project-information">
-          <p class="title" style="color: rgb(224, 224, 224);">
-            Epoxy River Tables
-          </p>
-          <p class="info" style="color: rgb(224, 224, 224);">
-            Designed & constructed luxorious river tables using locally
-            sourced wood and a two-part epoxy. Constructed a total of three tables.
-          </p>
-          <grid class="skills-container">
-            <button>
-              Woodworking
-            </button>
-            <button>
-              Design
-            </button>
-        </container>
-      </div>
-    </section>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="url">Home</a></li>
+        <li><a href="url">About Me</a></li>
+        <li><a href="url">My Projects</a></li>
+        <li><a href="url">Contact Me</a></li>
+      </ul>
+    </nav>
 
   </body>
-</html>
