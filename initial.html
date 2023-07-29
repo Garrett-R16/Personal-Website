@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/projects.css">
     
-    <script src="javascript/hamburger.js"></script>
+    <script type="text/javascript" src="javascript/hamburger.js"></script>
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,7 @@
 
   <body>
     <header id="header">
+
       <div class="header-container">
         <img class="logo" src="images/logo.png">
         <nav>
@@ -88,4 +90,76 @@
       </grid>
     </section>
 
+    <section id="portfolio">
+      <div class="grid">
+        <div class="portfolio-title">
+          <p>
+            Projects/Portfolio
+          </p>
+        </div>
+        <div class="project">
+          <div class="text">
+            <p class="project-title">
+              RDE - Assistive Hand
+            </p>
+            <ul>
+              <li>
+                Contributed to the construction of an assistive 
+                device aimed to bring a more affordable open source
+                option
+              </li>
+              <li>Assisted in:</li>
+              <ul>
+                <li>PCB research and construction</li>
+                <li>Brunel Hand 2.0 by Open Bionics hand research</li>
+                <li>Software Research</li>
+                <li><a href="url">Website Creation</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="images">
+           <!-- <button onclick="changeImage('images/projects/bionic-arm.jpg')" class="image-1">
+            </button>
+            <button onclick="changeImage('images/projects/epoxy-table.png')" class="image-2">
+            </button>
+            <button onclick="changeImage('images/projects/TVC.jpg')" class="image-3">
+            </button>
+          -->
+
+            <!--Credits to Coding Snow for helping with image slider-->
+            <div class="slides">
+
+              <input type="radio" name="image-btn" id="image1" checked>
+              <input type="radio" name="image-btn" id="image2">
+              <input type="radio" name="image-btn" id="image3">
+
+              <div class="slide first">
+                <img src="images/projects/bionic-arm.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/projects/epoxy-table.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/projects/terminal-connector.png" alt="">
+              </div>
+              
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+            </div>
+            
+            <div class="navigation-manual">
+              <label for="image1" class="manual-btn"></label>
+              <label for="image2" class="manual-btn"></label>
+              <label for="image3" class="manual-btn"></label>
+            </div>
+
+
+
+          </div> 
+        </div>
+      </div>
+    </section>
   </body>
