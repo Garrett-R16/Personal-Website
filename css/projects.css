@@ -2,45 +2,137 @@
   height: auto;
   background-color: #004B82;
   padding: 40px;
+  color: white;
+
+  border-top: 6px solid #002642;
+  border-bottom: 6px solid #002642;
 }
 
+
 .grid {
-  position: relative;
+  max-width: 970px;
+}
+
+/* Project and Project Text */
+
+.portfolio-title {
   width: auto;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.portfolio-title::after {
+  content: '';
+  position: absolute;
+
+  width: 120px;
+  height: 3px;
+  left: 0;
+  bottom: 55px;
+
+  background: white;
 }
 
 .project {
   margin: 0 auto;
-  width: 810px;
+  width: auto;
   display: grid;
-
-  height: 300px;
-
   grid-template-columns: auto auto;
+  gap: 5%;
+
+
   background-color: #002642;
+
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.project-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #E59500;
+}
+
+.project-title {
+  line-height: 30px;
+  margin-bottom: -5px;
+}
+
+
+.project-title span {
+  font-family: 'Work Sans';
+  position: relative;
   color: white;
+  font-size: 16px;
+}
+
+.project-title span::after {
+  content: '';
+  position: absolute;
+
+  width: 80px;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+
+  background: #E59500;
 }
 
 .text {
   padding: 30px;
   font-size: 16px;
+  color: #e0e0e0;
 }
 
-.project-title {
-  font-size: 25px;
-  font-weight: 400;
+.text ul li {
+  margin-bottom: 5px;
 }
+
+/* Skill Thingies */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #002642;
+  background-color: #E59500;
+  padding: 2px 10px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.skills p:not(:last-child) {
+  margin-right: 15px;
+}
+
+.skills p:hover {
+  transform: translate(0, -4px);
+  transition: .2s;
+  user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .5);
+}
+
+/* Project Images/Slides */
 
 .images {
-  height: 300px;
+  position: relative;
   width: 350px;
   overflow: hidden;
 }
 
 .slides {
+  position: absolute;
   display: flex;
+  height: 100%;
   width: 500%;
-  height: 300px;
 }
 
 .slides input{
@@ -53,15 +145,17 @@
 }
 
 .slide img{
-  height: 300px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
+
+/* Buttons for changing the image */
 
 .navigation-manual,
 .navigation-auto {
   position: absolute;
-  width: 350px;
+  width: 100%;
   bottom: 15px;
   display: flex;
   justify-content: center;
@@ -69,7 +163,7 @@
 
 .manual-btn,
 .navigation-auto div {
-  border: 2px solid #E59500;
+  border: 3px solid #E59500;
   padding: 4px;
   border-radius: 16px;
   cursor: pointer;
@@ -103,3 +197,22 @@
   background: #E59500;
 }
 
+@media (max-width: 890px){
+  .project {
+    max-width: 580px;
+  }
+  .project {
+    grid-template-columns: auto;
+  }
+  .images {
+    margin-top: -50px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .navigation-manual,
+  .navigation-auto {
+    bottom: 55px;
+  } 
+}
