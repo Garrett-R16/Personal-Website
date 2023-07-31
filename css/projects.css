@@ -8,11 +8,6 @@
   border-bottom: 6px solid #002642;
 }
 
-
-.grid {
-  max-width: 970px;
-}
-
 /* Project and Project Text */
 
 .portfolio-title {
@@ -36,19 +31,20 @@
   background: white;
 }
 
-.project {
+.grid {
+  max-width: 970px;
   margin: 0 auto;
-  width: auto;
+}
+
+.project {
   display: grid;
   grid-template-columns: auto auto;
   gap: 5%;
-
-
   background-color: #002642;
 
   border-radius: 15px;
+  
   overflow: hidden;
-
 }
 
 .project-title {
@@ -83,6 +79,7 @@
 }
 
 .text {
+  max-width: 580px;
   padding: 30px;
   font-size: 16px;
   color: #e0e0e0;
@@ -148,6 +145,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  opacity: 80%;
 }
 
 /* Buttons for changing the image */
@@ -155,10 +153,17 @@
 .navigation-manual,
 .navigation-auto {
   position: absolute;
-  width: 100%;
   bottom: 15px;
   display: flex;
   justify-content: center;
+}
+
+.navigation-manual {
+  width: 100%;
+}
+
+.navigation-auto {
+  width: 20%;
 }
 
 .manual-btn,
@@ -199,10 +204,11 @@
 
 @media (max-width: 890px){
   .project {
+    grid-template-columns: auto;
     max-width: 580px;
   }
-  .project {
-    grid-template-columns: auto;
+  .grid {
+    max-width: 580px;
   }
   .images {
     margin-top: -50px;
