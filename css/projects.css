@@ -1,11 +1,12 @@
 #portfolio {
   height: auto;
   background-color: #004B82;
-  padding: 40px;
+  padding: 40px 40px 150px 40px;
   color: white;
 
   border-top: 6px solid #002642;
   border-bottom: 6px solid #002642;
+
 }
 
 /* Project and Project Text */
@@ -45,6 +46,7 @@
   border-radius: 15px;
   
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .project-title {
@@ -57,7 +59,6 @@
   line-height: 30px;
   margin-bottom: -5px;
 }
-
 
 .project-title span {
   font-family: 'Work Sans';
@@ -221,4 +222,70 @@
   .navigation-auto {
     bottom: 55px;
   } 
+}
+
+/* Contact button */
+
+.contact-button {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 24px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(0, 0, 0, .2);
+  border: 2px solid white;
+  border-radius: 30px;
+
+  margin: 0 auto;
+  transition: 0.1s;
+  box-shadow: none;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  background-color: rgb(0, 0, 0, .4);
+}
+
+.contact-button:active {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0, .6);
+}
+
+/* skills pictures section */
+
+.skills-pictures {
+  padding-top: 50px;
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skills-pictures p {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.image-container {
+  margin-top: 5px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image-container img {
+  height: 55px;
+  margin: 10px 4px;
+  opacity: 95%;
+}
+
+.image-container img:hover {
+  transform: translate(0, -4px);
+  transition: .2s;
+  user-select: none;
 }

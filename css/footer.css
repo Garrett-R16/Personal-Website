@@ -1,0 +1,42 @@
+.footer {
+  background-color: #002642;
+  height: auto;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+}
+
+.footer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: -155px;
+  left: 0px;
+  transform-origin: right;
+  clip-path: polygon(100% 0, -50% 100%, 100% 100%);
+  background-color: #002642;
+  background: linear-gradient(to right, #002642, #004B82);
+
+}
+
+
+.footer::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -105px;
+  left: 0px;
+  transform-origin: right;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: #002642;
+}
+
+.contact-text {
+  color: white;
+}
