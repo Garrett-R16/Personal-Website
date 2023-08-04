@@ -1,5 +1,5 @@
 .footer {
-  background-color: #002642;
+  background-color: #00708A;
   height: auto;
   position: relative;
   width: 100%;
@@ -12,23 +12,41 @@
   content: '';
   display: block;
   width: 100%;
-  height: 50px;
+  height: 150px;
   position: absolute;
-  top: -55px;
+  top: -150px;
   left: 0px;
-  transform-origin: right;;
-  background-color: #002642;
-  background: linear-gradient(to right, #002642, #004B82);
-
+  transform-origin: right;
+  background: linear-gradient(to right, #00708A, transparent);
+  clip-path: polygon(0 100px, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+  z-index: 1;
 }
 
+.footer::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  transform-origin: right;
+  clip-path: polygon(0% 100%, 100% 0, 100% 100%);
+  background-color: #00708A;
+  z-index: 1;
+}
+
+
 .footer-name {
-  color: #E59500;
   margin: 10px 0 15px 0;
   font-size: 40px;
   font-weight: 600;
 
   position: relative;
+}
+
+.footer-name p {
+  color: #D3891F;
 }
 
 .footer-name::after {
@@ -40,7 +58,7 @@
   left: 0;
   bottom: 55px;
 
-  background: #E59500;
+  background: #D3891F;
 }
 
 .footer-grid {
@@ -48,7 +66,7 @@
   height: auto;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 30px 40px;
 }
 
 .footer-grid div:not(:last-child) {
@@ -59,7 +77,6 @@
   width: auto;
   display: flex;
   flex-wrap: wrap;
-  color: white;
 }
 
 .personal-links {
