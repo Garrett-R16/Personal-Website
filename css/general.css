@@ -10,5 +10,7 @@ body button {
   color: white;
 }
 
-
+html {
+  scroll-behavior: smooth !important;
+}
 

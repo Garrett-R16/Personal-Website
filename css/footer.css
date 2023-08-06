@@ -14,7 +14,7 @@
   width: 100%;
   height: 150px;
   position: absolute;
-  top: -150px;
+  top: -149.5px;
   left: 0px;
   transform-origin: right;
   background: linear-gradient(to right, #00708A, transparent);
@@ -28,7 +28,7 @@
   width: 100%;
   height: 100px;
   position: absolute;
-  top: -100px;
+  top: -99.5px;
   left: 0px;
   transform-origin: right;
   clip-path: polygon(0% 100%, 100% 0, 100% 100%);
@@ -56,7 +56,7 @@
   width: 65%;
   height: 3px;
   left: 0;
-  bottom: 55px;
+  bottom: 100%;
 
   background: #D3891F;
 }
@@ -66,7 +66,7 @@
   height: auto;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px 40px;
+  padding: 2rem;
 }
 
 .footer-grid div:not(:last-child) {

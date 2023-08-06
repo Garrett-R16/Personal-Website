@@ -4,8 +4,8 @@
     <title>Garrett's Personal Portfolio</title>
 
     <!--Style Sheets-->
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -25,16 +25,15 @@
         <img class="logo" src="images/logo.png">
         <nav>
           <ul>
-            <li><a href="url">Home</a></li>
-            <li><a href="url">About Me</a></li>
-            <li><a href="url">My Projects</a></li>
-            <li><a href="url">Contact Me</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">My Projects</a></li>
+            <li><a href="#contact-button">Contact Me</a></li>
           </ul>
         </nav>
         <!--Credit to Tyler Potts for helping with hamburger menu-->
         <button class="hamburger">
           <div class="bar">
-
           </div>
         </button>
       </div>
@@ -46,7 +45,7 @@
           </div> 
             <div class="intro-about">
               <p>
-                An engineer who can’t help but wonder at the stars
+                An engineer who can't help but wonder at the stars
               </p>
             </div>
         </div>
@@ -54,10 +53,10 @@
       </div>
       <nav class="mobile-nav">
         <ul>
-          <li><a href="url">Home</a></li>
-          <li><a href="url">About Me</a></li>
-          <li><a href="url">My Projects</a></li>
-          <li><a href="url">Contact Me</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">My Projects</a></li>
+          <li><a href="#contact-button">Contact Me</a></li>
         </ul>
       </nav>  
       <!--Scroll For More-->
@@ -69,24 +68,23 @@
     </header>
 
     
-    <section class="about">
+    <section id="about">
       <div class="grid">
         <div class="info-section">
           <p class="about-title">Who am I?</p>
           <p class="about-info"> 
-            <span class="span1">
-              Ever since I was young, space has always 
-              been a source of both inspiration and fascination.
-            </span>
+            I'm a high-school student located in Massachusetts. 
+            I love learning about engineering, space, physics, graphic design,
+            and computer science. I enjoy merging these interests to work on
+            my own interdisciplinary projects to develop a holistic 
+            understanding of how things operate. Currently, I'm working 
+            on my projects, schoolwork, and preparing for college. 
+            Feel free to reach out with any questions, concerns, or 
+            ideas by <a href="#contact-button">contacting me.</a>
             <br><br>
-            This, coupled with a passion for creation lead me to pursue a 
-            career in engineering. I plan to use these skills to create a 
-            positive impact and contribute towards space exploration, or
-            even simply improving quality of life through engineering 
-            solutions.
-            <br><br>
-            Outside of my career interests, I enjoy playing 
-            tennis, watching soccer, and spending time with my family.
+            Outside of my career interests, I enjoy teaching and playing 
+            competitive tennis, watching soccer, and spending time with my
+             family.
           </p>
         </div>
         <div class="about-image-container">
@@ -106,21 +104,18 @@
         <div class="project">
           <div class="text">
             <p class="project-title">
-              Intern/Volunteer 
+              Intern / Volunteer
               <br>
-              <span>DRANE ENGINEERING</span>
+              <span><a href="https://www.draneengineering.com/">DRANE ENGINEERING</a></span>
             </p>
             <ul>
               <li>
-                Functioned as a engineer and website developer
-              </li>
-              <li>
                 Investigated preexisting devices, libraries, and general 
-                knowledge beneficial to the creation of our own assistive 
-                device
+                knowledge beneficial to the creation of an assistive arm for 
+                those with nerodegenerative disorders
               </li>
               <li>
-                Assisted in the reflow soldering of the Chestnut PCB as designed by 
+                Assisted in the reflow soldering of a Chestnut PCB as designed by 
                 Open Bionics
               </li>
               <li>
@@ -181,7 +176,86 @@
             </div>
           </div> 
         </div>
-        <button class="contact-button" href="url">
+        <div class="project">
+          <div class="text">
+            <p class="project-title">
+              Epoxy River Tables
+              <br>
+              <span><a href="https://www.draneengineering.com/">Personal Project</a></span>
+            </p>
+            <ul>
+              <li>
+                Investigated necessary techniques and products for 
+                epoxy river table creation
+              </li>
+              <li>
+                Cut and sanded tables to begin, then developed custom melamine molds
+              </li>
+              <li>
+                Dyed, poured, and cured 2-part epoxy              
+              </li>
+              <li>
+                Buffed and finished the final product
+              </li>
+              <li>
+                Did smth
+              </li>
+              </ul>
+            </ul>
+            <div class="skills">
+              <p>
+                Reflow Soldering
+              </p>
+              <p>
+                R&D
+              </p>
+              <p>
+                Figma
+              </p>
+              <p>
+                HTML
+              </p>
+              <p>
+                CSS
+              </p>
+              <p>
+                JavaScript
+              </p>
+            </div>
+          </div>
+          <div class="images">
+            <!--Credits to coding snow for helping with image slider-->
+            <div class="slides">
+
+              <input type="radio" name="image-btn2" id="image4" checked>
+              <input type="radio" name="image-btn2" id="image5">
+              <input type="radio" name="image-btn2" id="image6">
+
+              <div class="slide first">
+                <img src="images/projects/DE/ARM_1.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/projects/DE/PCB_1.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/projects/DE/PCB_2.jpg" alt="">
+              </div>
+              
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+            </div>
+            
+            <div class="navigation-manual">
+              <label for="image4" class="manual-btn"></label>
+              <label for="image5" class="manual-btn"></label>
+              <label for="image6" class="manual-btn"></label>
+            </div>
+          </div> 
+        </div>
+        <button id="contact-button">
           Contact me to learn more
         </button>
         <div class="skills-pictures">

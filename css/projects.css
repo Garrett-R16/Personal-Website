@@ -1,8 +1,9 @@
 #portfolio {
   height: auto;
   background-color: #63A9C8;
-  padding: 40px 40px 180px 40px;
+  padding: 40px 2rem 180px 2rem;
   position: relative;
+  scroll-margin-top: 3rem;
 }
 
 /* Project and Project Text */
@@ -13,7 +14,7 @@
   width: 100%;
   height: 150px;
   position: absolute;
-  top: -150px;
+  top: -149.5px;
   left: 0px;
   transform-origin: right;
   background: linear-gradient(to right, #63A9C8, transparent);
@@ -27,7 +28,7 @@
   width: 100%;
   height: 100px;
   position: absolute;
-  top: -100px;
+  top: -99.5px;
   left: 0px;
   transform-origin: right;
   clip-path: polygon(0% 100%, 100% 0, 100% 100%);
@@ -52,12 +53,12 @@
   width: 120px;
   height: 3px;
   left: 0;
-  bottom: 55px;
+  bottom: 100%;
   background-color: white;
 }
 
 .grid {
-  max-width: 970px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -84,27 +85,34 @@
   margin-bottom: -5px;
 }
 
-.project-title span {
+.project-title span a {
   font-family: 'Work Sans';
   position: relative;
   font-size: 16px;
   color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.project-title span::after {
+.project-title span a::after {
   content: '';
   position: absolute;
 
-  width: 80px;
+  width: 40%;
   height: 3px;
   left: 0;
   bottom: -5px;
 
   background: #D3891F;
+  transition: .2s;
+}
+
+.project-title span a:hover::after {
+  width: 50%;
 }
 
 .text {
-  max-width: 580px;
+  max-width: 520px;
   padding: 30px;
   font-size: 16px;
   color: #e0e0e0;
@@ -124,7 +132,7 @@
 .skills p {
   font-size: 14px;
   font-weight: 600;
-  color: #002642;
+  color: #00708A;
   background-color: #D3891F;
   padding: 2px 10px;
   border-radius: 30px;
@@ -139,7 +147,7 @@
   transform: translate(0, -4px);
   transition: .2s;
   user-select: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 
 /* Project Images/Slides */
@@ -209,21 +217,27 @@
   background: #D3891F;
 }
 
-#image1:checked ~ .first{
+#image1:checked ~ .first, 
+#image4:checked ~ .first {
   margin-left: 0;
 }
 
-#image2:checked ~ .first{
+#image2:checked ~ .first, 
+#image5:checked ~ .first {
   margin-left: -20%;
 }
 
-#image3:checked ~ .first{
+#image3:checked ~ .first, 
+#image6:checked ~ .first {
   margin-left: -40%;
 }
 
 #image1:checked ~ .navigation-auto .auto-btn1,
 #image2:checked ~ .navigation-auto .auto-btn2,
-#image3:checked ~ .navigation-auto .auto-btn3 {
+#image3:checked ~ .navigation-auto .auto-btn3,
+#image4:checked ~ .navigation-auto .auto-btn1,
+#image5:checked ~ .navigation-auto .auto-btn2,
+#image6:checked ~ .navigation-auto .auto-btn3 {
   background: #D3891F;
 }
 
@@ -244,13 +258,13 @@
   }
   .navigation-manual,
   .navigation-auto {
-    bottom: 55px;
+    bottom: 4em;
   } 
 }
 
 /* Contact button */
 
-.contact-button {
+#contact-button {
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -263,15 +277,16 @@
   margin: 0 auto;
   transition: 0.1s;
   box-shadow: none;
+  scroll-margin-top: 10rem;
 }
 
-.contact-button:hover {
+#contact-button:hover {
   cursor: pointer;
   transform: scale(1.03);
   background-color: rgb(0, 0, 0, .4);
 }
 
-.contact-button:active {
+#contact-button:active {
   cursor: pointer;
   background-color: rgb(0, 0, 0, .6);
 }
