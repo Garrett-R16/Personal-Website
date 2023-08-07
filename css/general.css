@@ -2,12 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', Arial;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body p,
 body button {
   margin: 0;
-  color: white;
+  color: #E2F5FC;
 }
 
 html {

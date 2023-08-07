@@ -63,7 +63,7 @@
 
 .footer-grid {
   display: flex;
-  height: auto;
+  
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem;
@@ -98,7 +98,11 @@
 }
 
 .personal-links ul img {
-  height: 45px;
+  height: 40px;
+}
+
+.personal-links ul img:hover {
+  transform: translateY(-5px);
 }
 
 .personal-links ul li:not(:last-child) {

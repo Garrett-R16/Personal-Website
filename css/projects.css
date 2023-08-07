@@ -85,16 +85,22 @@
   margin-bottom: -5px;
 }
 
-.project-title span a {
-  font-family: 'Work Sans';
+.project-title span,
+.project-title span a{
   position: relative;
   font-size: 16px;
   color: white;
-  cursor: pointer;
   text-decoration: none;
+  user-select: none;
 }
 
-.project-title span a::after {
+.project-title span a {
+  font-family: 'Work Sans';
+  cursor: pointer;
+}
+
+
+.project-title span::after {
   content: '';
   position: absolute;
 
@@ -107,13 +113,13 @@
   transition: .2s;
 }
 
-.project-title span a:hover::after {
+.project-title span:hover::after {
   width: 50%;
 }
 
 .text {
   max-width: 520px;
-  padding: 30px;
+  padding: 2rem;
   font-size: 16px;
   color: #e0e0e0;
 }
@@ -145,7 +151,6 @@
 
 .skills p:hover {
   transform: translate(0, -4px);
-  transition: .2s;
   user-select: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
@@ -178,7 +183,6 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  opacity: 80%;
 }
 
 /* Buttons for changing the image */
@@ -201,7 +205,7 @@
 
 .manual-btn,
 .navigation-auto div {
-  border: 3px solid #D3891F;
+  border: 3px solid #B8E9EF;
   padding: 4px;
   border-radius: 16px;
   cursor: pointer;
@@ -214,21 +218,24 @@
 }
 
 .manual-btn:hover {
-  background: #D3891F;
+  background: #B8E9EF;
 }
 
-#image1:checked ~ .first, 
-#image4:checked ~ .first {
+#image1:checked ~ .first,
+#image4:checked ~ .first, 
+#image7:checked ~ .first {
   margin-left: 0;
 }
 
 #image2:checked ~ .first, 
-#image5:checked ~ .first {
+#image5:checked ~ .first,
+#image8:checked ~ .first {
   margin-left: -20%;
 }
 
 #image3:checked ~ .first, 
-#image6:checked ~ .first {
+#image6:checked ~ .first,
+#image9:checked ~ .first {
   margin-left: -40%;
 }
 
@@ -237,8 +244,11 @@
 #image3:checked ~ .navigation-auto .auto-btn3,
 #image4:checked ~ .navigation-auto .auto-btn1,
 #image5:checked ~ .navigation-auto .auto-btn2,
-#image6:checked ~ .navigation-auto .auto-btn3 {
-  background: #D3891F;
+#image6:checked ~ .navigation-auto .auto-btn3,
+#image7:checked ~ .navigation-auto .auto-btn1,
+#image8:checked ~ .navigation-auto .auto-btn2,
+#image9:checked ~ .navigation-auto .auto-btn3 {
+  background: #B8E9EF;
 }
 
 @media (max-width: 890px){
@@ -264,7 +274,7 @@
 
 /* Contact button */
 
-#contact-button {
+#contact-button button {
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -273,20 +283,25 @@
   background-color: rgb(0, 0, 0, .2);
   border: 2px solid white;
   border-radius: 30px;
-
+  
   margin: 0 auto;
   transition: 0.1s;
   box-shadow: none;
+}
+
+#contact-button {
+  text-decoration: none;
   scroll-margin-top: 10rem;
 }
 
-#contact-button:hover {
+
+#contact-button button:hover {
   cursor: pointer;
   transform: scale(1.03);
   background-color: rgb(0, 0, 0, .4);
 }
 
-#contact-button:active {
+#contact-button button:active {
   cursor: pointer;
   background-color: rgb(0, 0, 0, .6);
 }
@@ -319,11 +334,9 @@
 .image-container img {
   height: 55px;
   margin: 10px 4px;
-  opacity: 95%;
 }
 
 .image-container img:hover {
   transform: translate(0, -4px);
-  transition: .2s;
   user-select: none;
 }

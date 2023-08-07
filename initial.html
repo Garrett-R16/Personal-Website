@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <script type="text/javascript" src="javascript/hamburger.js"></script>
+    
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +23,7 @@
   <body>
     <header id="header">
 
-      <div class="header-container">
+      <div class="header-container" >
         <img class="logo" src="images/logo.png">
         <nav>
           <ul>
@@ -39,7 +41,7 @@
       </div>
       <div class="background-image">
         <div class="intro-text">
-          <div class="intro-info">
+          <div class="intro-info" >
             <p>Hello<span>,</span> I<span>'</span>m</p>
             <h1>Garrett Russell<span>.</span></h1>
           </div> 
@@ -70,7 +72,7 @@
     
     <section id="about">
       <div class="grid">
-        <div class="info-section">
+        <div class="info-section" data-aos="fade-right">
           <p class="about-title">Who am I?</p>
           <p class="about-info"> 
             I'm a high-school student located in Massachusetts. 
@@ -87,7 +89,7 @@
              family.
           </p>
         </div>
-        <div class="about-image-container">
+        <div class="about-image-container" data-aos="fade-right" data-aos-delay="200">
           <img src="pfp/profile-picture.jpg">
         </div>
       </div>
@@ -101,7 +103,7 @@
             Select Projects
           </p>
         </div>
-        <div class="project">
+        <div class="project" data-aos="fade-right">
           <div class="text">
             <p class="project-title">
               Intern / Volunteer
@@ -110,7 +112,7 @@
             </p>
             <ul>
               <li>
-                Investigated preexisting devices, libraries, and general 
+                Investigated pre-existing devices, libraries, and general 
                 knowledge beneficial to the creation of an assistive arm for 
                 those with nerodegenerative disorders
               </li>
@@ -176,12 +178,13 @@
             </div>
           </div> 
         </div>
-        <div class="project">
+
+        <div class="project" data-aos="fade-left">
           <div class="text">
             <p class="project-title">
-              Epoxy River Tables
+              Thrust-Vectored Rocketry
               <br>
-              <span><a href="https://www.draneengineering.com/">Personal Project</a></span>
+              <span>Personal Project</span>
             </p>
             <ul>
               <li>
@@ -189,42 +192,34 @@
                 epoxy river table creation
               </li>
               <li>
-                Cut and sanded tables to begin, then developed custom melamine molds
+                Cut, sanded and developed custom melamine molds
               </li>
               <li>
-                Dyed, poured, and cured 2-part epoxy              
+                Dyed, poured, and cured 2-part epoxy           
               </li>
               <li>
-                Buffed and finished the final product
+                Buffed and finished the final tables
               </li>
               <li>
-                Did smth
+                In total created three products 
+                (A desk, coffee-table, and dining room table)
+                and attempted to sell on FaceBook marketplace
               </li>
               </ul>
             </ul>
             <div class="skills">
               <p>
-                Reflow Soldering
+                Wood working
               </p>
               <p>
-                R&D
+                Epoxy curing
               </p>
               <p>
-                Figma
-              </p>
-              <p>
-                HTML
-              </p>
-              <p>
-                CSS
-              </p>
-              <p>
-                JavaScript
+                Creative design
               </p>
             </div>
           </div>
           <div class="images">
-            <!--Credits to coding snow for helping with image slider-->
             <div class="slides">
 
               <input type="radio" name="image-btn2" id="image4" checked>
@@ -232,13 +227,13 @@
               <input type="radio" name="image-btn2" id="image6">
 
               <div class="slide first">
-                <img src="images/projects/DE/ARM_1.jpg" alt="">
+                <img src="images/projects/Epoxy/epoxy-table.png" alt="">
               </div>
               <div class="slide">
-                <img src="images/projects/DE/PCB_1.jpg" alt="">
+                <img src="images/projects/Epoxy/epoxy-desk.jpg" alt="">
               </div>
               <div class="slide">
-                <img src="images/projects/DE/PCB_2.jpg" alt="">
+                <img src="images/projects/Epoxy/epoxy-coffee.jpg" alt="">
               </div>
               
               <div class="navigation-auto">
@@ -255,9 +250,87 @@
             </div>
           </div> 
         </div>
-        <button id="contact-button">
-          Contact me to learn more
-        </button>
+
+        <div class="project" data-aos="fade-right">
+          <div class="text">
+            <p class="project-title">
+              Epoxy River Tables
+              <br>
+              <span>Personal Project</span>
+            </p>
+            <ul>
+              <li>
+                Investigated necessary techniques and products for 
+                epoxy river table creation
+              </li>
+              <li>
+                Cut, sanded and developed custom melamine molds
+              </li>
+              <li>
+                Dyed, poured, and cured 2-part epoxy           
+              </li>
+              <li>
+                Buffed and finished the final tables
+              </li>
+              <li>
+                In total created three products 
+                (A desk, coffee-table, and dining room table)
+                and attempted to sell on FaceBook marketplace
+              </li>
+              </ul>
+            </ul>
+            <div class="skills">
+              <p>
+                Wood working
+              </p>
+              <p>
+                Epoxy curing
+              </p>
+              <p>
+                Creative design
+              </p>
+            </div>
+          </div>
+
+          <div class="images">
+            <div class="slides">
+
+              <input type="radio" name="image-btn3" id="image7" checked>
+              <input type="radio" name="image-btn3" id="image8">
+              <input type="radio" name="image-btn3" id="image9">
+
+              <div class="slide first">
+                <img src="images/projects/Epoxy/epoxy-table.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/projects/Epoxy/epoxy-desk.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/projects/Epoxy/epoxy-coffee.jpg" alt="">
+              </div>
+              
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+            </div>
+            
+            <div class="navigation-manual">
+              <label for="image7" class="manual-btn"></label>
+              <label for="image8" class="manual-btn"></label>
+              <label for="image9" class="manual-btn"></label>
+            </div>
+          </div> 
+        </div>
+
+   
+        <a id="contact-button" href="">
+          <button>
+            Contact me to learn more
+          </button>
+        </a>
+    
         <div class="skills-pictures">
           <div>
             <p>Experience using...</p>
@@ -293,9 +366,16 @@
             <li><a href="url"><img src="images/icons/github-icon.png"></a></li>
             <li><a href="url"><img src="images/icons/email-icon.png"></a></li>
             <li><a href="url"><img src="images/icons/linkedin-icon.png"></a></li>
-            <li><a href="url"><img src="images/logo.png"></a></li>
+            <li><a href="initial.html"><img src="images/logo.png"></a></li>
           </ul>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
   </body>

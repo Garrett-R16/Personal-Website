@@ -4,7 +4,6 @@
   position: relative;
 }
 
-
 .background-image {
   display: flex;
   position: relative;
@@ -23,6 +22,20 @@
   object-position: left bottom;
 }
 
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .scroll {
   position: absolute;
   width: 150px;
@@ -30,8 +43,16 @@
   text-align: center;
   left: 0;
   right: 0;
-  bottom: 12%;
-  opacity: 100%;
+  bottom: 10%;
+  opacity: 70%;
+
+  animation-name: up-down;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.scroll p {
+  color: #63A9C8;
 }
 
 .scroll img {
@@ -96,7 +117,41 @@
 
 /* Middle Text */
 
+@keyframes slide-up {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes max-width {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-150px);
+    opacity: 20%;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+
 .intro-text {
+  height: auto;
+  position: relative;
   text-align: left;
   width: 800px;
   padding: 30vh 2rem 0 2rem;
@@ -110,40 +165,68 @@
   }
 }
 
+.intro-info {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.intro-info::after {
+  content: '';
+  position: absolute;
+
+  height: 4px;
+  left: 40px;
+  bottom: 0;
+
+  background: #1e5a70;;
+
+  animation-delay: .2s;
+  animation-name: max-width;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 .intro-info p,
 .intro-info h1 {
   font-size: 50px;
   font-weight: 400;
   color: #e0f2f5;
+
+  animation-name: slide-up;
+  animation-duration: 1.2s;
 }
 
 .intro-info span {
   color: #1e5a70;
+  
 }
 
 .intro-info h1 {
   margin-top: 0;
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 0px;
 }
 
-.intro-info h1::after {
-  content: '';
-  position: absolute;
-
-  width: 50%;
-  height: 4px;
-  left: 40px;
-  bottom: -4px;
-
-  background: #1e5a70;;
+.intro-about {
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 .intro-about p {
   font-weight: 300;
+  position: relative;
   font-size: 20px;
   color: #e0f2f5;
+
+  animation-name: slide-down;
+  animation-duration: 1.5s;
 }
+
+
 
 /*Hamburger Menu*/
 
