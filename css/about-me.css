@@ -51,12 +51,12 @@
   font-size: 18px;
 }
 
-.about-info a{
-  color: #287C9B;
+.embed-L{
+  color: inherit;
   transition: .1s;
 }
 
-.about-info a:hover {
+.embed-L:hover {
   color: #D3891F;
 }
 
