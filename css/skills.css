@@ -1,17 +1,20 @@
 #projects-title {
   width: 100%;
-  height: 400px;
+  height: 25rem;
   position: relative;
 }
 
+
 .title-image {
   display: flex;
+
 
   position: relative;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
+
 
 .title-image img{
   position: absolute;
@@ -20,10 +23,11 @@
   object-fit: cover;
 }
 
+
 .title-image::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 1.25rem;
   left: 0;
   right: 0;
   bottom: 0px;
@@ -31,18 +35,21 @@
   z-index: 1;
 }
 
+
 .title-text {
-  width: 800px;
+  width: 50rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 
+
 .title-text p {
   position: absolute;
   color: white;
-  font-size: 60px;
+  font-size: 3.75rem;
   top: 0;
 
-  padding-top: 100px;
+
+  padding-top: 6.25rem;
 }

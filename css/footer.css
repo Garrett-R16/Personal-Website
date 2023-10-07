@@ -8,27 +8,29 @@
   height: auto;
 }
 
+
 .footer::before {
   content: '';
   display: block;
   width: 100%;
-  height: 150px;
+  height: 9.375rem;
   position: absolute;
-  top: -149.5px;
+  top: -9.34375rem;
   left: 0px;
   transform-origin: right;
   background: linear-gradient(to right, #00708A, transparent);
-  clip-path: polygon(0 100px, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+  clip-path: polygon(0 6.25rem, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
   z-index: 1;
 }
+
 
 .footer::after {
   content: '';
   display: block;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   position: absolute;
-  top: -99.5px;
+  top: -6.21875rem;
   left: 0px;
   transform-origin: right;
   clip-path: polygon(0% 100%, 100% 0, 100% 100%);
@@ -37,41 +39,51 @@
 }
 
 
+
+
 .footer-name {
-  margin: 10px 0 15px 0;
-  font-size: 40px;
+  margin: 0.625rem 0 0.9375rem 0;
+  font-size: 2.5rem;
   font-weight: 600;
+
 
   position: relative;
 }
+
 
 .footer-name p {
   color: #D3891F;
 }
 
+
 .footer-name::after {
   content: '';
   position: absolute;
 
+
   width: 65%;
-  height: 3px;
+  height: 0.1875rem;
   left: 0;
   bottom: 100%;
+
 
   background: #D3891F;
 }
 
+
 .footer-grid {
   display: flex;
-  
+ 
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem;
 }
 
+
 .footer-grid div:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
+
 
 .website-info {
   width: auto;
@@ -79,13 +91,16 @@
   flex-wrap: wrap;
 }
 
+
 .personal-links {
   display: flex;
   width: auto;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: -40px;
+  margin-left: -2.5rem;
 }
+
+
 
 
 .personal-links ul li {
@@ -93,23 +108,29 @@
   list-style: none;
 }
 
+
 .personal-links ul li a {
   text-decoration: none;
 }
 
+
 .personal-links ul img {
-  height: 40px;
+  height: 2.5rem;
 }
+
 
 .personal-links ul img:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.3125rem);
 }
 
+
 .personal-links ul li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
+
 
 .website-info,
 .personal-links {
   opacity: 95%;
 }
+

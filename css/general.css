@@ -6,13 +6,14 @@ body {
   overflow-x: hidden;
 }
 
+
 body p,
 body button {
   margin: 0;
   color: #E2F5FC;
 }
 
+
 html {
   scroll-behavior: smooth !important;
 }
-
