@@ -64,6 +64,12 @@
   background-color: white;
 }
 
+.slide-info {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: 400;
+}
 
 .grid {
   max-width: 56.875rem;
